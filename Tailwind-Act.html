@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS Image Filters</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+marquee {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+</style>
+
+
+</head>
+
+<body class="bg-[#0A1A2F] min-h-screen flex flex-col items-center justify-center p-6">
+
+<div class="relative w-full flex flex-col items-center justify-center">
+    <div class="absolute w-[1000px] h-[1000px] rounded-full 
+                bg-[radial-gradient(circle,#6A3CE6_0%,#FF8B3D_70%)] opacity-30 blur-3xl -z-10">
+    </div>
+    
+  <header class="w-full bg-gray-900 text-white py-3 overflow-hidden shadow-lg border-b border-gray-900 mb-8">
+    <div class="text-xl font-semibold ">
+        <marquee style="behavior:scroll; direction:left;"> 
+            <span class="mx-10"> Welcome!!! | BSIT 1-1 </span>
+            <span class="mx-10"> SiteKoToh </span>
+            <span class="mx-10"> The BEST </span>
+            <span class="mx-10"> ONG! </span>
+        </marquee>
+    </div>
+  </header>
+
+  
+  <h1 class="text-4xl font-semibold text-gray-100 mb-8 text-center">Tailwind CSS Image Filters</h1>
+
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl w-full">
+    
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Normal" class="rounded-lg w-full object-cover" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Normal</p>
+    </div>
+
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Grayscale" class="rounded-lg w-full object-cover filter grayscale-500" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Grayscale</p>
+    </div>
+
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Blur" class="rounded-lg w-full object-cover filter blur-sm" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Blur</p>
+    </div>
+
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Brightness" class="rounded-lg w-full object-cover filter brightness-15" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Brightness</p>
+    </div>
+
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Contrast" class="rounded-lg w-full object-cover filter contrast-300" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Contrast</p>
+    </div>
+
+    
+    <div class="bg-black rounded-2xl shadow-2xl p-4 flex flex-col items-center hover:bg-gray-900 transition-transform duration-300 hover:scale-105-transform duration-300 hover:scale-105">
+      <img src="https://i.pinimg.com/736x/1c/c0/8f/1cc08f68cf0a7906fab42ee18500d664.jpg" 
+           alt="Sepia" class="rounded-lg w-full object-cover filter sepia-500" />
+      <p class="text-lg font-medium text-gray-200 mt-3">Sepia</p>
+    </div>
+  </div>
+  </div>
+
+  <footer class="mt-10 text-white text-sm text-center">
+    <p> Ⓒ Hipolito, Brent Amiel C.</p>
+  </footer>
+
+</body>
+</html>
